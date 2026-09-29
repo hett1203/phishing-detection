@@ -1,0 +1,51 @@
+# ============================================================
+# schema.yaml - Data schema validation rules
+# Each of the 30 features MUST be in {-1, 0, 1}. Target in {-1, 1}.
+# ============================================================
+dataset:
+  name: UCI_Phishing_Websites
+  expected_n_rows_train: 11055
+  expected_n_rows_test: 11055
+  allow_missing: false
+
+features:
+  # 30 pre-engineered ternary features (each ∈ {-1, 0, 1})
+  - having_IP_Address
+  - URL_Length
+  - Shortining_Service
+  - having_At_Symbol
+  - double_slash_redirecting
+  - Prefix_Suffix
+  - having_Sub_Domain
+  - SSLfinal_State
+  - Domain_registeration_length
+  - Favicon
+  - port
+  - HTTPS_token
+  - Request_URL
+  - URL_of_Anchor
+  - Links_in_tags
+  - SFH
+  - Submitting_to_email
+  - Abnormal_URL
+  - Redirect
+  - on_mouseover
+  - RightClick
+  - popUpWidnow
+  - Iframe
+  - age_of_domain
+  - DNSRecord
+  - web_traffic
+  - Page_Rank
+  - Google_Index
+  - Links_pointing_to_page
+  - Statistical_report
+
+target:
+  name: Result
+  allowed_values: [-1, 1]
+  # -1 = phishing, +1 = legitimate
+
+# Each feature value must be one of these (used by validator)
+feature_allowed_values: [-1, 0, 1]
+target_allowed_values: [-1, 1]
