@@ -1,37 +1,11 @@
-# ============================================================
-# Phishing Website Detection - Master's Project Requirements
-# Python 3.11+ (tested on 3.12)
-# ============================================================
-
-# Core data science
-numpy
-pandas
-scipy
-# ML / scikit-learn
-scikit-learn
-scikit-learn-extra
-# Boosting libraries
-xgboost
-lightgbm
-catboost
-# Hyperparameter optimization
-optuna
-# AutoML
-autogluon.tabular
-# Explainability
-shap
-lime
-# Visualization
-matplotlib
-seaborn
-plotly
-# Dashboard
-streamlit
-# Configuration & utilities
-PyYAML
-joblib
-python-box
-tqdm
-ensure
-# Optional: HDBSCAN (may need build tools on some systems)
-hdbscan
+streamlit>=1.64
+scikit-learn>=1.5
+xgboost>=2.1
+lightgbm>=4.5
+catboost>=1.2
+shap>=0.52
+plotly>=6.5
+pandas>=2.2
+numpy>=1.26
+joblib>=1.4
+scipy>=1.13
